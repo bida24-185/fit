@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Fitness | FitLife</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">💪</span>
+                    <span class="logo-text">FitLife</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html#section1">Fitness</a>
+                        <a href="index.html#section2">Nutrition</a>
+                        <a href="index.html#section3">About us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="workouts.html" class="dropbtn">Workouts</a>
+                    <div class="dropdown-content">
+                        <a href="workouts.html#section1">Beginner</a>
+                        <a href="workouts.html#section2">Intermediate</a>
+                        <a href="workouts.html#section3">Advanced</a>
+                    </div>
+                </li>
+                <li><a href="Motivation.html">Motivation</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Health Journey</h1>
+                <p>Professional guidance for all fitness levels</p>
+                <a href="workouts.html" class="cta-button">Start Training</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Fitness Section -->
+        <section id="section1" class="content-section">
+            <div class="section-header">
+                <h2>Fitness Programs</h2>
+                <p>Customized workouts for every level</p>
+            </div>
+            
+            <div class="media-grid">
+                <!-- Workout Guide -->
+                <div class="media-card large">
+                    <div class="media-visual">
+                        <img src="media/1128335.jpg" alt="Workout demonstration">
+                    </div>
+                    <div class="media-content">
+                        <h3>Complete Workout Guide</h3>
+                        <p>Comprehensive exercise plans with detailed instructions and modifications for all fitness levels.</p>
+                        <a href="https://hsc.unm.edu/_media/pdfs/rbhomeworkoutguide2020-3.pdf" target="_blank" class="resource-link">
+                            <i class="fas fa-file-pdf"></i> Download Full Guide
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Video Cards -->
+                <div class="media-card">
+                    <div class="media-visual video-container">
+                        <iframe src="https://youtube.com/embed/3PMrt-1WDaI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </iframe>
+                    </div>
+                    <div class="media-content">
+                        <h3>Beginner Full Body</h3>
+                        <p>10-minute foundational routine perfect for newcomers.</p>
+                        <a href="workouts.html#section1" class="cta-button small">View Program</a>
+                    </div>
+                </div>
+                
+                <div class="media-card">
+                    <div class="media-visual video-container">
+                        <iframe src="https://youtube.com/embed/g2jocInockU"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-content">
+                        <h3>Advanced Conditioning</h3>
+                        <p>10-minute intense session for experienced athletes.</p>
+                        <a href="workouts.html#section3" class="cta-button small">View Program</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section id="section2" class="content-section alt-bg">
+            <div class="section-header">
+                <h2>Nutrition Guidance</h2>
+                <p>Fuel your performance with optimal nutrition</p>
+            </div>
+            
+            <div class="nutrition-layout">
+                <div class="nutrition-visual">
+                    <img src="media/2142306-3840x2160-desktop-4k-healthy-food-wallpaper.jpg" alt="Healthy food">
+                </div>
+                
+                <div class="nutrition-content">
+                    <div class="intro-content">
+                        <p class="lead">Science-based nutrition plans tailored to your fitness goals.</p>
+                        <p>Proper nutrition enhances performance, accelerates recovery, and helps achieve your ideal physique. Our plans adapt to your lifestyle and dietary preferences.</p>
+                    </div>
+                    
+                    <div class="nutrition-grid">
+                        <div class="nutrition-card">
+                            <div class="nutri-icon">1</div>
+                            <h4>Macro Tracking</h4>
+                            <p>Learn to balance proteins, carbs and fats for your specific needs.</p>
+                        </div>
+                        
+                        <div class="nutrition-card">
+                            <div class="nutri-icon">2</div>
+                            <h4>Meal Timing</h4>
+                            <p>Optimize nutrient timing for performance and recovery.</p>
+                        </div>
+                        
+                        <div class="nutrition-card">
+                            <div class="nutri-icon">3</div>
+                            <h4>Supplementation</h4>
+                            <p>Evidence-based recommendations for your regimen.</p>
+                        </div>
+                        
+                        <div class="nutrition-card">
+                            <div class="nutri-icon">4</div>
+                            <h4>Hydration</h4>
+                            <p>Advanced hydration strategies for peak performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="content-section">
+            <div class="section-header">
+                <h2>About Us</h2>
+            </div>
+              <div class="about-content">
+        <p>Welcome to <strong>FitLife</strong>, where fitness meets passion! Founded in 2020, we’re dedicated to helping you achieve your health goals through science-backed workouts, nutrition advice, and unwavering motivation.</p>
+        
+        <h3>Our Mission</h3>
+        <p>We believe fitness should be <strong>accessible, sustainable, and enjoyable</strong>. Our team of certified trainers and nutritionists curates personalized plans to empower you at every step of your journey.</p>
+        
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>✅ <strong>Expert Guidance</strong>: Evidence-based programs tailored to your needs.</li>
+            <li>✅ <strong>Community Support</strong>: Join thousands of members in our thriving fitness family.</li>
+            <li>✅ <strong>Holistic Approach</strong>: We focus on strength, endurance, nutrition, and mental wellness.</li>
+        </ul>
+        
+        <p>Ready to transform your life? <a href="#section2" class="cta-link">Explore our programs</a> or <a href="#" class="cta-link">get in touch</a> today!</p>
+    </div>   
+    </main>
+    <footer class="fitlife-footer">
+    <div class="footer-container">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <span class="logo-icon">💪</span>
+                <span class="logo-text">FitLife</span>
+            </div>
+            <p class="footer-tagline">Your journey to better health starts here</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-column">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="motivation.html">Motivation</a></li>
+                <li><a href="testimonials.html">Success Stories</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="footer-column">
+            <h3 class="footer-title">Contact Us</h3>
+            <ul class="footer-contact">
+                <li><i class="fas fa-envelope"></i> support@fitlife.com</li>
+                <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Fitness St, Health City</li>
+            </ul>
+            <div class="newsletter">
+                <h4>Get Updates</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="copyright">
+            &copy; <span id="current-year"></span> FitLife. All rights reserved.
+        </div>
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+     <script src="nav.js"></script>
+
+</body>
+</html>

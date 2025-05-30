@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Share Your Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">💪</span>
+                <span class="logo-text">FitLife</span>
+            </a>
+        </div>
+         <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>    
+        <nav class="main-nav">
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html#section1">Fitness</a>
+                        <a href="index.html#section2">Nutrition</a>
+                        <a href="index.html#section3">About us</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="workouts.html" class="dropbtn">Workouts</a>
+                    <div class="dropdown-content">
+                        <a href="workouts.html#section1">Beginner</a>
+                        <a href="workouts.html#section2">Intermediate</a>
+                        <a href="workouts.html#section3">Advanced</a>
+                    </div>
+                </li>
+                <li><a href="Motivation.html">Motivation</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="feedback-container">
+        <!-- Hero Section -->
+        <section class="feedback-hero">
+            <div class="hero-content">
+                <h1>We Value Your Feedback</h1>
+                <p>Help us improve FitLife by sharing your experience</p>
+            </div>
+        </section>
+
+        <!-- Feedback Form Section -->
+        <section class="feedback-form-section">
+            <div class="form-container">
+                <form id="feedbackForm" class="feedback-form">
+                    <div class="form-header">
+                        <h2>Share Your Thoughts</h2>
+                        <p>Your feedback helps us create better fitness experiences</p>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="form-group personal-info">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="age">Age Group</label>
+                                <select id="age" name="age">
+                                    <option value="" disabled selected>Select your age group</option>
+                                    <option value="under18">Under 18</option>
+                                    <option value="18-25">18-25</option>
+                                    <option value="26-35">26-35</option>
+                                    <option value="36-45">36-45</option>
+                                    <option value="46-55">46-55</option>
+                                    <option value="56+">56+</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="membership">Membership Status</label>
+                                <select id="membership" name="membership">
+                                    <option value="" disabled selected>Are you a member?</option>
+                                    <option value="free">Free User</option>
+                                    <option value="premium">Premium Member</option>
+                                    <option value="former">Former Member</option>
+                                    <option value="considering">Considering Membership</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Rating -->
+                    <div class="form-group rating-group">
+                        <h3>How would you rate your FitLife experience?</h3>
+                        <div class="rating-options">
+                            <div class="rating-option">
+                                <input type="radio" id="rating5" name="rating" value="5">
+                                <label for="rating5">
+                                    <i class="fas fa-star"></i>
+                                    <span>Excellent</span>
+                                </label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="rating4" name="rating" value="4">
+                                <label for="rating4">
+                                    <i class="fas fa-star"></i>
+                                    <span>Very Good</span>
+                                </label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="rating3" name="rating" value="3">
+                                <label for="rating3">
+                                    <i class="fas fa-star"></i>
+                                    <span>Good</span>
+                                </label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="rating2" name="rating" value="2">
+                                <label for="rating2">
+                                    <i class="fas fa-star"></i>
+                                    <span>Fair</span>
+                                </label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="rating1" name="rating" value="1">
+                                <label for="rating1">
+                                    <i class="fas fa-star"></i>
+                                    <span>Poor</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Details -->
+                    <div class="form-group feedback-details">
+                        <h3>Your Feedback</h3>
+                        <div class="form-field">
+                            <label for="feedback-type">Type of Feedback</label>
+                            <select id="feedback-type" name="feedback-type">
+                                <option value="" disabled selected>What's this about?</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="compliment">Compliment</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="question">Question</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Brief summary of your feedback">
+                        </div>
+                        <div class="form-field">
+                            <label for="message">Detailed Feedback</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Please share your thoughts in detail..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Additional Questions -->
+                    <div class="form-group additional-questions">
+                        <h3>Additional Questions</h3>
+                        <div class="form-field checkbox-field">
+                            <input type="checkbox" id="contact-permission" name="contact-permission">
+                            <label for="contact-permission">I'm open to being contacted for follow-up questions</label>
+                        </div>
+                        <div class="form-field checkbox-field">
+                            <input type="checkbox" id="feature-suggestions" name="feature-suggestions">
+                            <label for="feature-suggestions">I'd like to receive updates about new features</label>
+                        </div>
+                        <div class="form-field">
+                            <label for="how-heard">How did you hear about FitLife?</label>
+                            <select id="how-heard" name="how-heard">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="search">Search Engine</option>
+                                <option value="social">Social Media</option>
+                                <option value="friend">Friend/Family</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Form Submission -->
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Submit Feedback</button>
+                        <button type="reset" class="reset-btn">Start Over</button>
+                    </div>
+                </form>
+                
+                <!-- Confirmation Message (hidden by default) -->
+                <div id="confirmationMessage" class="confirmation-message">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Thank You for Your Feedback!</h3>
+                    <p>We appreciate you taking the time to share your thoughts with us. Your feedback helps us improve FitLife for everyone.</p>
+                    <button id="submitAnother" class="submit-btn">Submit Another Feedback</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Feedback FAQ</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How will my feedback be used?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your feedback helps us prioritize improvements, fix issues, and develop new features. We analyze all feedback to identify common themes and make data-driven decisions about our product roadmap.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        When can I expect a response?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While we read all feedback, we may not respond to every submission individually. If you've requested a response or reported a critical issue, we'll typically respond within 3-5 business days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I submit feedback anonymously?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Simply leave the personal information fields blank. Anonymous feedback is still valuable to us, though we may not be able to follow up on specific issues without contact information.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What types of feedback are most helpful?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The most helpful feedback is specific and constructive. Tell us what you like, what could be improved, and how you'd like to see it improved. Screenshots or specific examples are especially valuable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fitlife-footer">
+         <div class="footer-container">
+                <div class="footer-brand">
+                    <h3>FitLife</h3>
+                    <p>Transform your body, transform your life</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Workout Levels</h4>
+                        <ul>
+                            <li><a href="workouts.html#section1">Beginner</a></li>
+                            <li><a href="workouts.html#section2">Intermediate</a></li>
+                            <li><a href="workouts.html#section3">Advanced</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="Motivation.html">Motivation</a></li>
+                            <li><a href="Testimonials.html">Success Stories</a></li>
+                            <li><a href="Feedback.html">Share Feedback</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <p class="contact-email">support@fitlife.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> FitLife Fitness. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="feedback.js"></script>
+     <script src="nav.js"></script>
+</body>
+</html>
